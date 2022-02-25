@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="CMSC 137: Data Communications and Networking, Institute of Computer Science, University of the Philippines Los Banos">
+      <meta name="author" content="Joseph Anthony C. Hermocilla">
+
+      <title>CMSC 137: Data Communicatons and Networking (Second Sem 2017-2018)</title>
+
+      <!-- Bootstrap core CSS -->
+      <link href="../../lib/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Custom styles for this template -->
+      <link href="../../lib/css/scrolling-nav.css" rel="stylesheet">
+
+      <style>
+         .cmscwide {
+            width:100%;
+            height:100%;
+            background-image:url('networks.jpg');
+            background-size:cover;
+         }
+      </style>
+
+   </head>
+
+   <body id="page-top">
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+         <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">CMSC 137</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#staff">Staff</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#project">Project</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#resources">Resources</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <header class="bg-primary text-white cmscwide">
+         <div class="container text-center">
+            <h1>Data Communications and Networking</h1>
+            <p class="lead">Second Semester AY 2017-2018</p>
+         </div>
+      </header>
+
+      <section id="about">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 mx-auto">
+                  <h2>About</h2>
+                  <h5>Catalog Description</h5>
+                  <div class="container">
+                  <table class="table table-condensed table-sm">
+                     <tbody>
+                        <tr>
+                           <td>Course Number</td>
+                           <td>CMSC 137</td>
+                        </tr>
+                        <tr>
+                           <td>Course Title</td>
+                           <td>Data Communications and Networking</td>
+                        </tr>
+                        <tr>
+                           <td>Description</td>
+                           <td>Basic principles of data communications; design issues and protocols in the layers of data network; networks for various applications.</td>
+                        </tr>
+                        <tr>
+                           <td>Prerequisites</td>
+                           <td>CMSC 125</td>
+                        </tr>
+                        <tr>
+                           <td>Credit</td>
+                           <td>3 units</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+                  <h5>Aim</h5>
+                  <p>The aim of this course is to introduce students to data communications and networking concepts.</p>
+                  <h5>Objectives</h5>
+                  At the end of this course the student should be able to: 
+                  <ol>
+                     <li>explain how data is transmitted over communication channels;</li>
+                     <li>identify and describe the different layers of the OSI reference model and TCP/IP protocol suite, including the protocols available for each layer;</li>
+                     <li>describe how different architectures of Local Area Networks and Internetworks operate, together with the services they provide;</li>
+                     <li>protect and secure data in networked environments;</li>
+                     <li>develop network-enabled applications using a high-level programming language;and</li>
+                     <li>perform basic network administration.</li>
+                  </ol>
+                  <h5>Topics (based on ACM's 2013 Curriculum Guidelines)</h5>
+                  <ol>
+                  </ol>
+                  <h5>Evaluation/Grading(Tentative)</h5>
+                     <table class="table table-sm">
+                        <tr>
+                           <td>3 Long Exams</td>
+                           <td>45%</td>
+                        </tr>
+                        <tr>
+                           <td>Quizzes/Homeworks</td>
+                           <td>10%</td>
+                        </tr>
+                        <tr>
+                           <td>Project</td>
+                           <td>50%</td>
+                        </tr>
+                        <tr>
+                           <td><b>Total</b></td>
+                           <td><b>100%</b></td>
+                        </tr>
+                     </table>
+                     Passing grade is 55%. No grade of 4.0 will be given. Grading scale is shown below. 
+                     <table class="table table-sm table-striped">
+                        <tr>
+                           <td>0.00</td>
+                           <td>54.99</td>
+                           <td>5.0</td>
+                        </tr>
+                        <tr>
+                           <td>55.00</td>
+                           <td>59.99</td>
+                           <td>3.0</td>
+                        </tr>
+                        <tr>
+                           <td>60.00</td>
+                           <td>64.99</td>
+                           <td>2.75</td>
+                        </tr>
+                        <tr>
+                           <td>65.00</td>
+                           <td>69.99</td>
+                           <td>2.5</td>
+                        </tr>
+                        <tr>
+                           <td>70.00</td>
+                           <td>74.99</td>
+                           <td>2.25</td>
+                        </tr>
+                        <tr>
+                           <td>75.00</td>
+                           <td>79.99</td>
+                           <td>2.0</td>
+                        </tr>
+                        <tr>
+                           <td>80.00</td>
+                           <td>84.99</td>
+                           <td>1.75</td>
+                        </tr>
+                        <tr>
+                           <td>85.00</td>
+                           <td>89.99</td>
+                           <td>1.5</td>
+                        </tr>
+                        <tr>
+                           <td>90.00</td>
+                           <td>94.99</td>
+                           <td>1.25</td>
+                        </tr>
+                        <tr>
+                           <td>95.00</td>
+                           <td>100</td>
+                           <td>1.0</td>
+                        </tr>
+                     </table>
+                  <h5>Attendance Policy</h5>
+                  <p>Attendance will be checked only during face-to-face meetings.</p>
+                  <h5>Collaboration Policy</h5>
+                  <p></p>
+                  <h5>Honor Code</h5>
+                     <ul>
+                        <li>Properly acknowledge help received.</li>
+                        <li>No looking at solutions/programs from previous years.</li>
+                        <li>No sharing of code with other students.</li>
+                        <li>Be ready to explain your code.</li>
+                     </ul> 
+                  <h5>Google Classroom: <u>66pqwi7</u></h5>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <section id="staff" class="bg-light">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 mx-auto">
+                  <h2>Staff</h2>
+                  <table class="table table-striped table-sm">
+                     <thead>
+                     <tr>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Email</th>
+                     </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Joseph Anthony C. Hermocilla</td>
+                           <td>Lecturer</td>
+                           <td>jchermocilla@up.edu.ph</td>
+                        </tr>
+                        <tr>
+                           <td>Marie Betel de Robles</td>
+                           <td>Lab Instructor</td>
+                           <td>mbderobles2@up.edu.ph</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="schedule">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 mx-auto">
+                  <h2>Schedule</h2>
+                  <table class="table table-sm table-striped table-bordered">
+                     <thead class="thead-inverse">
+                        <tr>
+                           <th style="width:10%">Meeting</th>
+                           <th>Date</th>
+                           <th>Topic</th>
+                           <th>Readings</th>
+                           <th>Homework</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                           <th scope="row">1</th>
+                           <td>1/16/2018 T</td>
+                           <td>(no meeting)</td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">2 (F2F)</th>
+                           <td>1/18/2018 Th</td>
+                           <td>Introduction</td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">3</th>
+                           <td>1/23/2018 T</td>
+                           <td>Metropolitan Area Network</td>
+                           <td>FOR Ch. 1</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">4</th>
+                           <td>1/25/2018 Th</td>
+                           <td>Internet Standards</td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">5</th>
+                           <td>1/30/2018 T</td>
+                           <td>Open System Interconnect(OSI) model</td>
+                           <td>FOR Ch. 2</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">6</th>
+                           <td>2/1/2018 Th</td>
+                           <td>TCP/IP Protocol Suite</td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">7 (F2F)</th>
+                           <td>2/6/2018 T</td>
+                           <td>Analog Signals</td>
+                           <td>FOR Ch. 3</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">8</th>
+                           <td>2/6/2018 Th</td>
+                           <td>Network Performance</td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">9</th>
+                           <td>2/13/2018 T</td>
+                           <td>Digital-to-Digital Conversion: HDB3</td>
+                           <td>FOR Ch. 4</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">10</th>
+                           <td>2/15/2018 Th</td>
+                           <td>Transmission Modes</td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">11 (F2F)</th>
+                           <td>2/20/2018 T</td>
+                           <td>Phase Modulation</td>
+                           <td>FOR Ch. 5</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">12</th>
+                           <td>2/22/2018 Th</td>
+                           <td>Direct Sequence Spread Spectrum</td>
+                           <td>FOR Ch. 6</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">13</th>
+                           <td>2/27/2018 T</td>
+                           <td>Infrared Transmission</td>
+                           <td>FOR Ch. 7</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">14 (F2F)</th>
+                           <td>3/1/2018 Th</td>
+                           <td><b>Exam 1</b></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">15</th>
+                           <td>3/6/2018 T</td>
+                           <td>Crossbar Switch</td>
+                           <td>FOR Ch. 8</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">16</th>
+                           <td>3/8/2018 Th</td>
+                           <td>Checksum</td>
+                           <td>FOR Ch. 10</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">17</th>
+                           <td>3/13/2018 T</td>
+                           <td>Go-Back-N ARQ</td>
+                           <td>FOR Ch. 11</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">18 (F2F)</th>
+                           <td>3/15/2018 Th</td>
+                           <td>PPP</td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">19</th>
+                           <td>3/20/2018 T</td>
+                           <td>CSMA/CA</td>
+                           <td>FOR Ch. 12</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">20 (F2F)</th>
+                           <td>3/22/2018 Th</td>
+                           <td>CDMA</td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">21</th>
+                           <td>3/27/2018 T</td>
+                           <td><b>Exam 2</b></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">22 (F2F)</th>
+                           <td>3/29/2018 Th</td>
+                           <td><b>(no meeting)</b></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">23</th>
+                           <td>4/3/2018 T</td>
+                           <td>Wired LANs</td>
+                           <td>FOR Ch. 13</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">24</th>
+                           <td>4/5/2018 Th</td>
+                           <td>Wireless LANs</td>
+                           <td>FOR Ch. 14</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">25</th>
+                           <td>4/10/2018 T</td>
+                           <td>IPv6 Addresses</td>
+                           <td>FOR Ch. 19</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">26</th>
+                           <td>4/12/2018 Th</td>
+                           <td>IPv6 Deployment</td>
+                           <td>FOR Ch. 20</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">27 (F2F)</th>
+                           <td>4/17/2018 T</td>
+                           <td>Routing</td>
+                           <td>FOR Ch. 22</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">28</th>
+                           <td>4/19/2018 Th</td>
+                           <td>STCP</td>
+                           <td>FOR Ch. 23</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">29</th>
+                           <td>4/24/2018 T</td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">30 (F2F)</th>
+                           <td>4/26/2018 Th</td>
+                           <td><b>Exam 3</b></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">31</th>
+                           <td>5/1/2018 T</td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">32</th>
+                           <td>5/3/2018 Th</td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">33</th>
+                           <td>5/8/2018 T</td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">34</th>
+                           <td>5/10/2018 Th</td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">35</th>
+                           <td>5/15/2018 T</td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <th scope="row">36</th>
+                           <td>5/17/2018 Th</td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="project" class="bg-light">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 mx-auto">
+                  <h2>Project</h2>
+                  <p>All laboratory sessions will be alloted to project making.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <section id="resources">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 mx-auto">
+                  <h2>Resources</h2>
+                  <h5>Textbook</h5>
+                  <p>
+                  [FOR]: Forouzan, B.A.2007.<i>Data Communications and Networking, 4th Ed.</i>McGraw-Hill, New York 
+                  </p>
+                  <h5>Supplementary Textbooks</h5>
+                  <ul> 
+                     <li><a href="http://docwiki.cisco.com/wiki/Internetworking_Technology_Handbook?dtid=osscdc000283">Cisco Internetworking Technology Handbook</a></li>
+                     <li>Tanenbaum, A. 2003. <i>Computer Networks, 4th Ed.</i> Prentice Hall, Singapore.</li>
+                     <li>Kurose, J.F. and Ross, K.W. 2004. <i>Computer Networking: A Top-Down Approach Featuring the Internet</i>Addison-Wesley.</li>
+                     <li>Peterson, L.L and Davie, B.S., A. 2003. <i>Computer Networks: A Systems Approach, 3rd. Ed.</i> Elsevier Science, USA.</li>
+                  </ul>
+                  <h5>Similar DCN Courses</h5>
+                  <ul>
+                     <li><a href="http://www.cs.cmu.edu/~srini/15-441/S10/">15-441, CMU</a></li>
+                     <li><a href="http://www.scs.stanford.edu/09au-cs144/">CS 144, Stanford</a></li>
+                     <li><a href="http://inst.eecs.berkeley.edu/~ee122/fa09/">EE122, UCB</a></li>
+                  </ul>
+                  <h5>Software</h5>
+                  <ul>
+                     <li><a href="netsim-3.0.jar">Network Simulator</a> (developed by M. Detras, V. Lee, R. Lacaneta,L.J.B. Tirazona)
+                     The simulator requires JDK1.6. Run the simulator using the command <pre>java -jar netsim-3.0.jar</pre></li>
+                     <li><a href="http://www.isi.edu/nsnam/ns/">Network Simulator NS-2</a></li>
+                     <li><a href="http://www.secdev.org/projects/scapy/">Scapy</a></li>
+                     <li><a href="http://mininet.org/">Mininet</a></li>
+                  </ul>
+                  <h5>Others</h5>
+                  <ul>
+                     <li><a href="http://www.rfc-editor.org/">RFC Editor</a></li>
+                     <li><a href="http://www.ietf.org/">Internet Engineering Task Force</a></li>
+                     <li><a href="http://williamstallings.com/DCC6e.html">DCC 6e Resources</a></li>
+                     <li><a href="http://linux-ip.net/html/">Linux Guide to IP Layer</a></li>
+                     <li><a href="http://wps.aw.com/aw_kurose_network_4/0,13091,4173752-,00.html">Collection of Applets</a></li>
+                     <li><a href="http://www.pcvr.nl/tcpip/">TCP/IP Illustrated Volume 1 The Protocols</a></li>
+                     <li><a href="http://beej.us/guide/bgnet/html/single/bgnet.html">Beej's Guide to Network Programming</a></li>
+                     <li><a href="https://docs.oracle.com/javase/tutorial/networking/index.html">Java Networking Tutorial</a></li>
+                  </ul>
+                  </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="py-5 bg-dark">
+         <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; JACH 2018</p>
+         </div>
+         <!-- /.container -->
+      </footer>
+
+      <!-- Bootstrap core JavaScript -->
+      <script src="../../lib/vendor/jquery/jquery.min.js"></script>
+      <script src="../../lib/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+      <!-- Plugin JavaScript -->
+      <script src="../../lib/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+      <!-- Custom JavaScript for this theme -->
+      <script src="../../lib/js/scrolling-nav.js"></script>
+
+   </body>
+
+</html>
